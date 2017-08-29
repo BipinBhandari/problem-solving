@@ -3,7 +3,8 @@
 using namespace std;
 
  int primeCount(int start, int end){
- 	int prime_count = 0, i, rem, prime_check_flag=false;
+ 	int prime_count = 0, i, rem;
+ 	bool prime_check_flag=false;
  	while(start <= end){
  		for(i=2;i<=start;i++){
  			rem = start % i;
