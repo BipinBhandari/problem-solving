@@ -16,10 +16,10 @@ int isIntertia(int a[], int len) {
       if (num > max_even) {
         second_max_even = max_even;
         max_even = num;
-      }else{
-          if (num < max_even && num > second_max_even){
-              second_max_even = num;
-          }
+      } else {
+        if (num < max_even && num > second_max_even) {
+          second_max_even = num;
+        }
       }
     } else {
       if (num > max_odd) {
