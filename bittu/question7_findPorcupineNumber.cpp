@@ -24,7 +24,7 @@ int findPorcupineNumber(int n) {
           isNextPrimeNumber = false;
         }
       }
-      if((n%10) == 9 && !isNextPrimeNumber){
+      if((n % 10) == 9 && !isNextPrimeNumber){
         isNextPrimeNumber = true;
         porcupineNUmber = n;
       }
