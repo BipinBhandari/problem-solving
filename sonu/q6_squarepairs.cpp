@@ -34,9 +34,9 @@ int countSquarePairs(int a[ ], int len){
 int main() 
 {
   int result;		
-  int a[] = {9}; 
+  int a[] = {9, 0, 2, -5, 7}; 
   int len = sizeof(a)/sizeof(*a);
   result = countSquarePairs(a, len);
-  cout << "Answer : "<< result;
+  cout << "Answer : "<< len;
   return 0;
 }
