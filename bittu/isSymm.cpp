@@ -17,7 +17,7 @@ int isSymm(int a[ ], int len) {
 
 int main() 
 {
-  int a[] = {2, 7, 8, 9, 11, 13, 10};
+  int a[] = {2};
   int len = sizeof(a)/sizeof(*a);
   int x = isSymm(a , len);
   cout << x;
