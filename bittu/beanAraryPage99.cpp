@@ -6,17 +6,13 @@ using namespace std;
 
 int beanArray(int a[ ], int len) {
   for(int i = 0; i < len; i++) {
-    bool beanArray = true;
-    for(int j = 0; j < len; j++) {
-        if(a[j] == a[i]+1 || a[j]== a[i]-1 ){
-          beanArray = true;
-          break;
-        }
-    }
-    if(!beanArray)
-      break;
+      for(int j = 0; j < len; j++) {
+          if(a[j] != a[i]+1 || a[j]!= a[i]-1 ){
+            return false;
+          }
+      }
   }
-  return beanArray;
+  return true;
 }
  
 
