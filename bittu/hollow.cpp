@@ -30,7 +30,7 @@ int sumIsPower(int a[ ], int len) {
 
 int main() 
 {
-  int a[] = {1,2, 0,0, 3,4};
+  int a[] = {1,2,4,9, 0,0,0,3,4, 5,9};
   int len = sizeof(a)/sizeof(*a);
   int x = sumIsPower(a , len);
   cout << x;

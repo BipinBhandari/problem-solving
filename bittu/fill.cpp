@@ -27,6 +27,6 @@ int main()
   int a[] = {1,2,3,5, 9, 12,-2,-1};
   int len = sizeof(a)/sizeof(*a);
   int* x = fill(a , 3, 10, len);
-  cout << x[1] << endl;
+  cout << x[2] << endl;
   return 0;
 }
