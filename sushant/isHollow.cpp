@@ -8,12 +8,11 @@ int isHollow(int a[], int len){
 	if(len < 9) return false;
 	for(int i = 0; i < len; i++){
 		if(a[i] == 0 && firstOccOfZero == -1){
-			if(i < 2 || i * 3 != len) return 0;
+			If(i < 2 || i * 3 != len) return 0;
 			firstOccOfZero = i;
 		}
 
 		if(a[i] == 0 && firstOccOfZero != -1){
-			cout << "second";
 			if(lastOccOfZero != -1 && lastOccOfZero != i - 1) return 0; 
 			lastOccOfZero = i;
 		}
