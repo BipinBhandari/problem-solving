@@ -9,15 +9,10 @@ int *fill(int arr[], int k, int n, int len){
 		return 0;
 	}
 	for(int i=0; i<n; i ++){
-		if(i < k){
-			arr[i] = arr[i];
-		}else{
-			arr[i] = arr[countRepIndex];
-			if(countRepIndex == k){
-				countRepIndex = 0;
-			}
-			countRepIndex++;
-		}
+	   if(k==countRepIndex) 
+		 	countRepIndex = 0;
+		arr[i] = arr[countRepIndex];
+		countRepIndex++;
 	}
 	return arr;
 }
